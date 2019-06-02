@@ -13,8 +13,8 @@ def ConnectarDb( PRODUCCION ):
     if PRODUCCION == False:
             conn = pyodbc.connect(
                     '''DRIVER={ODBC Driver 13 for SQL Server};
-                    SERVER=localhost\sqlexpress;
-                    DATABASE=QueryGoPruebas;
+                    SERVER=SERVERNAME;
+                    DATABASE=DBNAME;
                     Trusted_Connection=yes;
                     autocommit = True;'''
                     )
