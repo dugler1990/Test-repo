@@ -14,8 +14,8 @@ import string
 
 conn = pyodbc.connect(
     r'DRIVER={ODBC Driver 13 for SQL Server};'
-    r'SERVER=localhost\sqlexpress;'
-    r'DATABASE=QueryGoPruebas;'
+    r'SERVER=SERVERNAME;'
+    r'DATABASE=DBNAME;'
     r'Trusted_Connection=yes;'
     r'autocommit = True;'
     )
